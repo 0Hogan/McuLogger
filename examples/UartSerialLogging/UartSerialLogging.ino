@@ -14,7 +14,7 @@ void loop()
 {
     if (millis() >= timeOfLastLog_ms + TIME_BETWEEN_LOGS_MS)
     {
-        LOG_INFO("");
+        LOG_INFO("time: %lu", millis());
         timeOfLastLog_ms = millis();
     }
     delay(100);
